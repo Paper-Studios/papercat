@@ -1,4 +1,13 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faHouse,
+  faPeopleGroup,
+  faStar,
+  faFeatherPointed,
+  faEnvelope,
+  faBoxOpen
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   return (
@@ -31,6 +40,14 @@ export default function Navbar() {
             <li><a href={'/blog'}>Blog</a></li>
             <li><a href={'/contact'}>Contact</a></li>
             <li><a href={'/presskit'}>Press Kit</a></li>
+          </ul>
+          <ul className="nav-mobile-ul">
+            <li><a className="nav-mobile-li" href={'/'}><FontAwesomeIcon icon={faHouse} /></a></li>
+            <li><a className="nav-mobile-li" href={'/team'}><FontAwesomeIcon icon={faPeopleGroup} /></a></li>
+            <li><a className="nav-mobile-li" href={'/featured'}><FontAwesomeIcon icon={faStar} /></a></li>
+            <li><a className="nav-mobile-li" href={'/blog'}><FontAwesomeIcon icon={faFeatherPointed} /></a></li>
+            <li><a className="nav-mobile-li" href={'/contact'}><FontAwesomeIcon icon={faEnvelope} /></a></li>
+            <li><a className="nav-mobile-li" href={'/presskit'}><FontAwesomeIcon icon={faBoxOpen} /></a></li>
           </ul>
         </nav>
       </header>
