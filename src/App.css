@@ -4,11 +4,14 @@
   --color-white: #ffffff;
   --color-gradient: linear-gradient(to bottom, #884CF5, #4E229C);
   --border-purple: 2px solid #5928B2;
+  --text-primary: 'Bubblegum Sans', cursive;
+  --text-secondary: 'Courier Prime', monospace;
 }
 
 
 a {
   color: var(--color-white);
+  text-decoration: none;
 }
 
 a:hover {
@@ -57,12 +60,14 @@ body {
 }
 
 .pc-logo {
-  width: 84px;
-  height: 84px;
+  width: 112px;
+  height: 112px;
 }
 
 h3 {
-  font-size: 26px;
+  font-family: var(--text-primary);
+  font-size: 32px;
+  text-shadow: rgba(0, 0, 0, 0.5) -5px 5px 5px;
   margin: 0;
   margin-bottom: 5px;
 }
@@ -91,9 +96,9 @@ h3 {
 }
 
 .social-icon {
-  border: 2px solid red;
-  width: 42px;
-  height: 42px;
+  border: 2px solid #AD4055;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
 }
 
@@ -111,6 +116,8 @@ h3 {
   list-style: none;
   padding: 0 5%;
   justify-content: space-between;
+  font-size: 32px;
+  font-family: var(--text-primary);
 }
 
 .bot-nav-header {
@@ -142,15 +149,15 @@ h3 {
 }
 
 .card-one {
-  transform: rotate(15deg) translate(30%, -15%);
+  transform: rotate(15deg) translate(30%, -8%);
 }
 
 .card-two {
-  transform: rotate(-12deg) translate(170%, 12%);
+  transform: rotate(-12deg) translate(185%, 25%);
 }
 
 .card-three {
-  transform: rotate(-20deg) translate(420%, 200%);
+  transform: rotate(-20deg) translate(420%, 215%);
   height: 75px;
 }
 
