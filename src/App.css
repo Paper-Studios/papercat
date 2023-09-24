@@ -2,6 +2,8 @@
   --color-primary: #5928B2;
   --color-secondary: #F5647F;
   --color-white: #ffffff;
+  --color-gradient: linear-gradient(to bottom, #884CF5, #4E229C);
+  --border-purple: 2px solid #5928B2;
 }
 
 
@@ -18,18 +20,93 @@ body {
 }
 
 .App {
-  background-color: black;
+  background-image: url('/public/assets/bgSeamless.png');
   color: var(--color-white);
   font: sans-serif;
   min-height: 100vh;
-  width: 100%;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 10%;
+}
+
+/* Navigation Bar Styling */
+
+.navigation-container, .top-nav-header, ul {
+  display: flex;
+  width: 100%;
+}
+
+.navigation-container {
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.top-nav-header {
+  align-items: center;
+}
+
+.pc-logo {
+  width: 84px;
+  height: 84px;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.top-nav-large-card {
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
+  background: var(--color-gradient);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  border: var(--border-purple);
+  justify-content: space-evenly;
+  padding: 1%;
+  z-index: 3;
+}
+
+.top-nav-socials {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+.socials-icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon {
+  border: 2px solid red;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  flex-basis: 70%;
+  background: var(--color-gradient);
+  height: 70%;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.navigation-links ul {
+  list-style: none;
+  padding: 0 5%;
+  justify-content: space-between;
 }
 
 .App-header {
-  background-color: var(--color-primary);
+  background: var(--color-gradient);
   padding: 10px;
   width: 80%;
   display: flex;
@@ -44,13 +121,8 @@ body {
   width: 40%;
 }
 
-.outlet {
-  margin-top: 50px;
-  width: 81%;
-}
-
 .Home {
-  background-color: var(--color-primary);
+  background: var(--color-gradient);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

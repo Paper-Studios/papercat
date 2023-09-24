@@ -1,9 +1,9 @@
-import react from 'react';
+import React from 'react';
 
 function Home() {
   return (
     <div className='Home'>
-      <img src={'/assets/header.jpg'} id='headerimg' width='100%'/>
+      <img src={'/assets/header.jpg'} id='headerimg' width='100%' alt='Paper Perjury banner'/>
       <div className='blurb'>
         Solve Crimes, Outsmart Criminals
       </div>
@@ -17,8 +17,8 @@ function Home() {
           </p>
         </div>
         <div className='home-screenshots'>
-          <img src='/assets/screenshot1.jpg' height='45%' width='80%'/>
-          <img src='/assets/screenshot2.jpg' height='45%' width='80%'/>
+          <img src='/assets/screenshot1.jpg' height='45%' width='80%' alt='gameplay'/>
+          <img src='/assets/screenshot2.jpg' height='45%' width='80%' alt='gameplay'/>
         </div>
       </div>
     </div>
