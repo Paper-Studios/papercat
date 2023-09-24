@@ -5,7 +5,9 @@ export default function Navbar() {
     <div className="navigation-container">
       <header className="top-nav-header">
         <div className="top-nav-large-card">
-          <img src={'/assets/logo.png'} className="pc-logo" alt='Paper Cat Logo'/>
+          <div className="logo-bg">
+            <img src={'/assets/logo.png'} className="pc-logo" alt='Paper Cat Logo'/>
+          </div>
           <div className="top-nav-socials">
             <h3>Paper Cat Games</h3>
             <div className="socials-icon-container">
