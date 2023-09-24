@@ -96,10 +96,28 @@ h3 {
 }
 
 .social-icon {
-  border: 2px solid #AD4055;
+  border: 2px solid var(--color-secondary);
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.social-icon:hover {
+  border: 2px solid #AD4055;
+}
+
+.discord {
+  background-image: url('/public/assets/discord-icon.png');
+}
+
+.twitter {
+  background-image: url('/public/assets/twitter-icon.png');
+}
+
+.steam {
+  background-image: url('/public/assets/steam-icon.png');
 }
 
 .navigation-links {

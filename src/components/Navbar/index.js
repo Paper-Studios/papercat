@@ -20,15 +20,9 @@ export default function Navbar() {
           <div className="top-nav-socials">
             <h3>Paper Cat Games</h3>
             <div className="socials-icon-container">
-              <div className="social-icon discord">
-
-              </div>
-              <div className="social-icon twitter">
-
-              </div>
-              <div className="social-icon steam">
-
-              </div>
+              <div className="social-icon discord" />
+              <div className="social-icon twitter" />
+              <div className="social-icon steam" />
             </div>
           </div>
         </div>
