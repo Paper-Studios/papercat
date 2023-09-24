@@ -119,7 +119,6 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: 1;
-  border: 2px solid green;
 }
 
 .bot-nav-skewed-large-card {
@@ -127,6 +126,32 @@ h3 {
   flex-basis: 32%;
   height: 100%;
   transform: translateX(-2%) rotate(348deg);
+}
+
+.bot-nav-skewed-small-cards {
+  display: flex;
+  flex-basis: 68%;
+  position: relative;
+}
+
+.nav-card {
+  position: absolute;
+  width: 100px;
+  height: 110px;
+  background-color: var(--color-secondary);
+}
+
+.card-one {
+  transform: rotate(15deg) translate(30%, -15%);
+}
+
+.card-two {
+  transform: rotate(-12deg) translate(170%, 12%);
+}
+
+.card-three {
+  transform: rotate(-20deg) translate(420%, 200%);
+  height: 75px;
 }
 
 .App-header {
@@ -196,3 +221,26 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
 }
+
+
+/* ---------------------------------------------------------- */
+/* RESPONSIVENESS */
+/* ---------------------------------------------------------- */
+
+/* @media screen and (max-width: 1366px) {
+  .nav-card {
+    width: 75px;
+    height: 85px;
+  }
+  .card-one {
+    transform: rotate(15deg) translate(40px, 38px);
+  }
+
+  .card-two {
+    transform: rotate(-15deg) translate(65px, 52px);
+  }
+
+  .card-three {
+    transform: rotate(-20deg) translate(140px, 70px);
+  }
+} */
