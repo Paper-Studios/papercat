@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
 
 import Home from './components/Home';
 import Team from './components/Team';
-import Featured from './components/Featured';
+import Featured from './components/Games';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import PressKit from './components/PressKit';

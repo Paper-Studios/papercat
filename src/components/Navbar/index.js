@@ -30,7 +30,7 @@ export default function Navbar() {
           <ul>
             <li><a href={'/'}>Home</a></li>
             <li><a href={'/team'}>Team</a></li>
-            <li><a href={'/featured'}>Featured</a></li>
+            <li><a href={'/featured'}>Games</a></li>
             <li><a href={'/blog'}>Blog</a></li>
             <li><a href={'/contact'}>Contact</a></li>
             <li><a href={'/presskit'}>Press Kit</a></li>
