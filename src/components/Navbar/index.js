@@ -29,12 +29,12 @@ export default function Navbar() {
         </div>
         <nav className="navigation-links">
           <ul>
-            <li><NavLink className="nav-desktop-li" to={'/'}>Home</NavLink></li>
-            <li><NavLink className="nav-desktop-li" to={'/team'}>Team</NavLink></li>
-            <li><NavLink className="nav-desktop-li" to={'/featured'}>Games</NavLink></li>
-            <li><NavLink className="nav-desktop-li" to={'/blog'}>Blog</NavLink></li>
-            <li><NavLink className="nav-desktop-li" to={'/contact'}>Contact</NavLink></li>
-            <li><NavLink className="nav-desktop-li" to={'/presskit'}>Press Kit</NavLink></li>
+            <li><a href={'/'}>Home</a></li>
+            <li><a href={'/team'}>Team</a></li>
+            <li><a href={'/featured'}>Games</a></li>
+            <li><a href={'/blog'}>Blog</a></li>
+            <li><a href={'/contact'}>Contact</a></li>
+            <li><a href={'/presskit'}>Press Kit</a></li>
           </ul>
           <ul className="nav-mobile-ul">
             <li><NavLink className="nav-mobile-li" to={'/'}><FontAwesomeIcon icon={faHouse} /></NavLink></li>
