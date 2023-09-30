@@ -289,6 +289,28 @@ h3 {
 }
 
 /* ---------------------------------------------------------- */
+/* TEAM PAGE */
+/* ---------------------------------------------------------- */
+.games-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, #884CF5, #4E229C);
+  padding: 5%;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #4E229C;
+  border-radius: 4%;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+
+/* ---------------------------------------------------------- */
 /* RESPONSIVENESS */
 /* ---------------------------------------------------------- */
 
