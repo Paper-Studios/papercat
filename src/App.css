@@ -142,6 +142,10 @@ h3 {
   font-family: var(--text-primary);
 }
 
+.active{
+  color: var(--color-secondary);
+}
+
 .bot-nav-header {
   position: absolute;
   display: flex;
@@ -314,6 +318,23 @@ h3 {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .navigation-links ul, h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .navigation-links ul, h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navigation-links ul, h3 {
+    font-size: 24px;
+  }
+}
+
 /* LARGE SCREENS */
 @media screen and (max-width: 1280px) {
   .pc-logo {
@@ -324,9 +345,6 @@ h3 {
     width: 42px;
     height: 42px;
   }
-  .navigation-links ul, h3 {
-    font-size: 26px;
-  }
   .nav-card {
     width: 75px;
     height: 85px;
@@ -336,6 +354,17 @@ h3 {
   }
 }
 
+@media screen and (max-width: 1130px) {
+  .navigation-links ul, h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .navigation-links ul, h3 {
+    font-size: 20px;
+  }
+}
 
 /* MEDIUM TABLET TERRITORY*/
 @media screen and (max-width: 1024px) {
@@ -343,12 +372,12 @@ h3 {
     width: 70px;
     height: 70px;
   }
+  .navigation-links ul, h3 {
+    font-size: 18px;
+  }
   .social-icon {
     width: 32px;
     height: 32px;
-  }
-  .navigation-links ul, h3 {
-    font-size: 20px;
   }
   .nav-card {
     width: 65px;
@@ -372,9 +401,6 @@ h3 {
   .social-icon {
     width: 28px;
     height: 28px;
-  }
-  .navigation-links ul, h3 {
-    font-size: 18px;
   }
   .nav-card {
     width: 55px;

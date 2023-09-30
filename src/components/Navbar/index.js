@@ -1,9 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faHouse,
   faPeopleGroup,
-  faStar,
+  faGamepad,
   faFeatherPointed,
   faEnvelope,
   faBoxOpen
@@ -28,20 +29,20 @@ export default function Navbar() {
         </div>
         <nav className="navigation-links">
           <ul>
-            <li><a href={'/'}>Home</a></li>
-            <li><a href={'/team'}>Team</a></li>
-            <li><a href={'/featured'}>Featured</a></li>
-            <li><a href={'/blog'}>Blog</a></li>
-            <li><a href={'/contact'}>Contact</a></li>
-            <li><a href={'/presskit'}>Press Kit</a></li>
+            <li><NavLink className="nav-desktop-li" to={'/'}>Home</NavLink></li>
+            <li><NavLink className="nav-desktop-li" to={'/team'}>Team</NavLink></li>
+            <li><NavLink className="nav-desktop-li" to={'/featured'}>Games</NavLink></li>
+            <li><NavLink className="nav-desktop-li" to={'/blog'}>Blog</NavLink></li>
+            <li><NavLink className="nav-desktop-li" to={'/contact'}>Contact</NavLink></li>
+            <li><NavLink className="nav-desktop-li" to={'/presskit'}>Press Kit</NavLink></li>
           </ul>
           <ul className="nav-mobile-ul">
-            <li><a className="nav-mobile-li" href={'/'}><FontAwesomeIcon icon={faHouse} /></a></li>
-            <li><a className="nav-mobile-li" href={'/team'}><FontAwesomeIcon icon={faPeopleGroup} /></a></li>
-            <li><a className="nav-mobile-li" href={'/featured'}><FontAwesomeIcon icon={faStar} /></a></li>
-            <li><a className="nav-mobile-li" href={'/blog'}><FontAwesomeIcon icon={faFeatherPointed} /></a></li>
-            <li><a className="nav-mobile-li" href={'/contact'}><FontAwesomeIcon icon={faEnvelope} /></a></li>
-            <li><a className="nav-mobile-li" href={'/presskit'}><FontAwesomeIcon icon={faBoxOpen} /></a></li>
+            <li><NavLink className="nav-mobile-li" to={'/'}><FontAwesomeIcon icon={faHouse} /></NavLink></li>
+            <li><NavLink className="nav-mobile-li" to={'/team'}><FontAwesomeIcon icon={faPeopleGroup} /></NavLink></li>
+            <li><NavLink className="nav-mobile-li" to={'/featured'}><FontAwesomeIcon icon={faGamepad} /></NavLink></li>
+            <li><NavLink className="nav-mobile-li" to={'/blog'}><FontAwesomeIcon icon={faFeatherPointed} /></NavLink></li>
+            <li><NavLink className="nav-mobile-li" to={'/contact'}><FontAwesomeIcon icon={faEnvelope} /></NavLink></li>
+            <li><NavLink className="nav-mobile-li" to={'/presskit'}><FontAwesomeIcon icon={faBoxOpen} /></NavLink></li>
           </ul>
         </nav>
       </header>
