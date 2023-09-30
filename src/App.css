@@ -360,18 +360,24 @@ h3 {
   }
 }
 
+@media screen and (max-width: 1075px) {
+  .navigation-links ul, h3 {
+    font-size: 20px;
+  }
+}
+
 /* MEDIUM TABLET TERRITORY*/
 @media screen and (max-width: 1024px) {
   .pc-logo {
     width: 70px;
     height: 70px;
   }
+  .navigation-links ul, h3 {
+    font-size: 18px;
+  }
   .social-icon {
     width: 32px;
     height: 32px;
-  }
-  .navigation-links ul, h3 {
-    font-size: 20px;
   }
   .nav-card {
     width: 65px;
@@ -395,9 +401,6 @@ h3 {
   .social-icon {
     width: 28px;
     height: 28px;
-  }
-  .navigation-links ul, h3 {
-    font-size: 18px;
   }
   .nav-card {
     width: 55px;
