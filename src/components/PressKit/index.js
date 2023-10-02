@@ -1,3 +1,10 @@
+import main from '../../assets/main.jpg';
+import ss1 from '../../assets/ss1.jpg';
+import ss2 from '../../assets/ss2.jpg';
+import ss3 from '../../assets/ss3.jpg';
+import ss4 from '../../assets/ss4.png';
+import ss5 from '../../assets/ss5.png';
+
 function PressKit() {
   return (
     <div className="presskit-content">
@@ -54,7 +61,14 @@ function PressKit() {
 
         <div className="mainbar-entry">
           <h1>Images</h1>
-
+          <div className="game-images">
+            <img src={main} className="screenshot" />
+            <img src={ss1} className="screenshot" />
+            <img src={ss2} className="screenshot" />
+            <img src={ss3} className="screenshot" />
+            <img src={ss4} className="screenshot" />
+            <img src={ss5} className="screenshot" />
+          </div>
         </div>
       </div>
     </div>
