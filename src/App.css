@@ -313,6 +313,35 @@ h3 {
   padding: 2%;
 }
 
+/* ---------------------------------------------------------- */
+/* TEAM PAGE */
+/* ---------------------------------------------------------- */
+.presskit-content {
+  align-items: start;
+  background: linear-gradient(to top, #884CF5, #4E229C);
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+.presskit-sidebar {
+  min-width: 25%;
+}
+.presksit-mainbar {
+
+}
+.mainbar-entry {
+  align-items: center;
+  background: #4E229C;
+  border-radius: 4%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  padding: 1% 4%;
+}
+.presskit-features {
+  display: flex;
+  flex-direction: column;
+}
 
 /* ---------------------------------------------------------- */
 /* RESPONSIVENESS */
