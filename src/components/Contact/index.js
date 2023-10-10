@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div>Contact Page</div>
+    <div>Contact Page poop</div>
   )
 }
 export default Contact;
