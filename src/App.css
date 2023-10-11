@@ -374,6 +374,38 @@ h3 {
   .card-three {
     height: 55px;
   }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-description {
+    width: 100%;
+  }
+  #abstract {
+    width: 90%;
+  }
+  .blurb {
+    width: 80%;
+    font-size: larger;
+    text-align: center;
+  }
+  #release {
+    font-size: larger;
+  }
+  h1 {
+    font-size: x-large;
+  }
+  .member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .member-photo {
+    width: 50%;
+  }
+  .member-blurb {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 1130px) {
@@ -518,7 +550,40 @@ h3 {
   .bot-nav-skewed-small-cards {
     margin-top: 24%;
   }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-description {
+    width: 100%;
+  }
+  #abstract {
+    width: 90%;
+  }
+  .blurb {
+    width: 80%;
+    font-size: larger;
+    text-align: center;
+  }
+  #release {
+    font-size: larger;
+  }
+  h1 {
+    font-size: large;
+  }
+  .member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .member-photo {
+    width: 50%;
+  }
+  .member-blurb {
+    text-align: left;
+  }
 }
+
 
 @media screen and (max-width: 375px) {
   .nav-mobile-li {
