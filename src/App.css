@@ -314,14 +314,14 @@ h3 {
 }
 
 /* ---------------------------------------------------------- */
-/* TEAM PAGE */
+/* PRESSKIT PAGE */
 /* ---------------------------------------------------------- */
 .presskit-content {
   align-items: start;
   background: linear-gradient(to top, #884CF5, #4E229C);
   display: flex;
   flex-direction: row;
-  padding: 5%;
+  padding: 5% 5% 0% 5%;
 }
 .presskit-sidebar {
   min-width: 25%;
