@@ -1,5 +1,5 @@
 import ImageList from './ImageList';
-import ImageEntry from './ImageEntry.js';
+import ImageEntry from './ImageEntry';
 
 function PressKit() {
   return (
@@ -65,7 +65,7 @@ function PressKit() {
             <img src={ss4} className="screenshot" />
             <img src={ss5} className="screenshot" /> */}
             {
-              ImageList.Map((image) => (
+              ImageList.Map(({ image }) => (
                 <ImageEntry image={image} />
               ))
             }

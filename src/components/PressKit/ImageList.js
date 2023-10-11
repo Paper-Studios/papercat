@@ -1,27 +1,20 @@
-import main from '../../assets/main.jpg';
-import ss1 from '../../assets/ss1.jpg';
-import ss2 from '../../assets/ss2.jpg';
-import ss3 from '../../assets/ss3.jpg';
-import ss4 from '../../assets/ss4.png';
-import ss5 from '../../assets/ss5.png';
-
-module.export.ImageList = [
+module.exports.ImageList = [
   {
-    image: main,
+    image: '../../assets/main.jpg',
   },
   {
-    image: ss1,
+    image: '../../assets/ss1.jpg',
   },
   {
-    image: ss2,
+    image: '../../assets/ss2.jpg',
   },
   {
-    image: ss3,
+    image: '../../assets/ss3.jpg',
   },
   {
-    image: ss4,
+    image: '../../assets/ss4.jpg',
   },
   {
-    image: ss5,
+    image: '../../assets/ss5.jpg',
   },
 ]
