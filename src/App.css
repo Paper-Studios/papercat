@@ -281,8 +281,9 @@ h3 {
 
 .home-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 3%;
+  padding: 0 1%;
 }
 
 .home-description {
@@ -347,6 +348,7 @@ h3 {
 
 .steam-info img {
   width: 45%;
+  height: 30%;
 }
 
 .steam-info p {
@@ -400,11 +402,12 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  flex-basis: 50%;
 }
 
 .home-screenshots img {
-  width: 90%;
+  width: 93%;
 }
 
 /* ---------------------------------------------------------- */
@@ -553,6 +556,9 @@ h3 {
   .card-three {
     height: 65px;
   }
+  .home-screenshots {
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -590,22 +596,32 @@ h3 {
     height: 55px;
   }
   .home-content {
-    display: flex;
     flex-direction: column;
   }
   .home-description {
-    width: 100%;
-  }
-  #abstract {
-    width: 90%;
+    margin-bottom: 8%;
   }
   .blurb {
-    width: 80%;
     font-size: larger;
-    text-align: center;
   }
-  #release {
-    font-size: larger;
+  #abstract {
+    margin: 0;
+  }
+  .steam-container {
+    margin: 0;
+  }
+  .steam-title h4 {
+    font-size: 24px;
+  }
+  .steam-info p {
+    font-size: 20px;
+  }
+  .home-screenshots {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .home-screenshots img {
+    width: 48%;
   }
   h1 {
     font-size: x-large;
@@ -659,10 +675,16 @@ h3 {
   .card-three:hover {
     transform: rotate(-15deg) translate(391%, 175%);
   }
+  .steam-info p {
+    font-size: 18px;
+  }
 }
 
 /* MEDIUM MOBILE TERRITORY*/
 @media screen and (max-width: 900px) {
+  .main-container {
+    padding: 0 5%;
+  }
   .pc-logo {
     width: 60px;
     height: 60px;
@@ -678,6 +700,15 @@ h3 {
   .card-three {
     height: 35px;
     transform: rotate(-20deg) translate(385%, 246%);
+  }
+  #abstract {
+    font-size: 18px;
+  }
+  .steam-title h4 {
+    font-size: 22px;
+  }
+  .steam-info p {
+    font-size: 16px;
   }
 }
 
@@ -739,6 +770,9 @@ h3 {
   .bot-nav-skewed-small-cards {
     margin-top: 18%;
   }
+  .Home {
+    margin-top: 3%;
+  }
 }
 
 /* X-SMALL MOBILE */
@@ -773,15 +807,38 @@ h3 {
     width: 100%;
   }
   #abstract {
-    width: 90%;
+    font-size: 16px;
   }
   .blurb {
     width: 80%;
-    font-size: larger;
+    margin: 8%;
+    font-size: 16px;
     text-align: center;
   }
   #release {
     font-size: larger;
+  }
+  .steam-container {
+    margin-bottom: 15px;
+  }
+  .steam-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .steam-info img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .steam-info p {
+    margin: 0 0 15px 0;
+  }
+  .home-screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-screenshots img {
+    width: 100%;
+    margin-bottom: 15px;
   }
   h1 {
     font-size: large;
@@ -806,6 +863,13 @@ h3 {
   }
   .bot-nav-skewed-small-cards {
     margin-top: 26%;
+  }
+  .steam-platform-icons {
+    margin-bottom: 30px;
+  }
+  .steam-buttons {
+    justify-content: center;
+    padding: 0;
   }
 }
 
