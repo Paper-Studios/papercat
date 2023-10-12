@@ -26,6 +26,16 @@ function PressKit() {
         </div>
       </div>
       <div className="presskit-mainbar">
+        <div className="videoWrapper">
+          <h1>Trailer</h1>
+          <iframe
+            src="https://www.youtube.com/embed/mvKB5AkDQko?si=jSEgbFWovtSaBkjB"
+            title="Paper Perjury Trailer"
+            frameBorder="0"  // Use frameBorder instead of frameborder
+            allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          />
+        </div>
+
         <div className="mainbar-entry">
           <h1>Description</h1>
           <p>Paper Perjury is a detective mystery game where you solve a series of cases as newly hired police clerk Justina Smith and find out the truth behind a string of suspicious crimes. Work with the energetic detective Ernest Hunt and dig for clues in the paper trail to discover the secrets that paperwork can hide.</p>
@@ -46,17 +56,6 @@ function PressKit() {
             <li>Groove to the game's jazzy soundtrack to truly become a great detective!</li>
             <li>Befriend a cat! (the most important part of any game)</li>
           </ul>
-        </div>
-
-        <div className="mainbar-entry">
-          <h1>Trailer</h1>
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/mvKB5AkDQko?si=Vl3sDjhsZZnVwXnb" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen />
         </div>
 
         <div className="mainbar-entry">
