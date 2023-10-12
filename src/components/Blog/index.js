@@ -1,6 +1,15 @@
+import { exampleData } from './exampleData';
+import BlogEntry from './BlogEntry';
+
 function Blog() {
   return (
-    <div>Blog Page</div>
+    <div className="blog-content">
+      {
+        exampleData.map(({title, content}) => (
+          <BlogEntry title={ title } content={ content } />
+        ))
+      }
+    </div>
   )
 }
 export default Blog;
