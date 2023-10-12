@@ -51,8 +51,8 @@ function Home() {
           </div>
         </div>
         <div className='home-screenshots'>
-          <img src='/assets/screenshot1.jpg' height='45%' width='80%' alt='gameplay'/>
-          <img src='/assets/screenshot2.jpg' height='45%' width='80%' alt='gameplay'/>
+          <img src='/assets/screenshot1.jpg' alt='gameplay'/>
+          <img src='/assets/screenshot2.jpg' alt='gameplay'/>
         </div>
       </div>
     </div>
