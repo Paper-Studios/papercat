@@ -343,11 +343,18 @@ h3 {
   flex-direction: column;
 }
 .game-images {
+  align-items: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .screenshot {
+  margin-bottom: 2%;
   width: 40%;
+}
+.screenshot:hover {
+  cursor: pointer;
 }
 
 /* ---------------------------------------------------------- */
