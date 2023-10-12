@@ -6,6 +6,7 @@
   --border-purple: 2px solid #5928B2;
   --text-primary: 'Bubblegum Sans', cursive;
   --text-secondary: 'Courier Prime', monospace;
+  --text-tertiary: 'Source Sans 3', sans-serif;
 }
 
 
@@ -292,12 +293,102 @@ h3 {
 }
 
 #abstract {
-  width: 80%;
+  margin: 0;
+  font-family: var(--text-tertiary);
+  font-size: 20px;
 }
 
 .release {
   margin: 20px;
   padding: 20px;
+}
+
+.steam-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3%;
+  background-color: #282F38;
+  position: relative;
+}
+
+.steam-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.steam-title h4 {
+  font-size: 20px;
+  font-family: var(--text-tertiary);
+  margin: 0;
+  padding: 0;
+}
+
+.steam-title span {
+  color: gray;
+}
+
+.steam-title img {
+  width: 5%;
+  height: 5%;
+  filter: brightness(75%);
+}
+
+.steam-info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.steam-info img {
+  width: 45%;
+}
+
+.steam-info p {
+  font-family: var(--text-tertiary);
+  font-size: 14px;
+  margin: 0 0 0 3%;
+}
+
+.steam-platform-icons {
+  display: flex;
+  align-items: center;
+}
+
+.windows {
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+.steam-buttons {
+  font-family: var(--text-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: -8%;
+  height: 20%;
+  width: 100%;
+  padding: 0 2%;
+}
+
+.steam-button-left {
+  background-color: black;
+  margin-right: 5px;
+  padding: 1.5%;
+}
+
+.steam-button-right {
+  padding: 1.5%;
+  color: white;
+  background: linear-gradient(#87BC3C, #45740B);
+}
+
+.steam-button-right:hover {
+  color: white;
+  filter: brightness(75%);
+  cursor: pointer;
 }
 
 .home-screenshots {
