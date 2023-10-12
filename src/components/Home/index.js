@@ -3,7 +3,16 @@ import React from 'react';
 function Home() {
   return (
     <div className='Home'>
-      <img src={'/assets/header.jpg'} id='headerimg' width='100%' alt='Paper Perjury banner'/>
+      <div className="banner-container">
+        <img src={'/assets/header.jpg'} id='headerimg' width='100%' alt='Paper Perjury banner'/>
+        <iframe
+            src="https://www.youtube.com/embed/mvKB5AkDQko?si=jSEgbFWovtSaBkjB"
+            title="Paper Perjury Trailer"
+            frameBorder="0"
+            allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            className="banner-video"
+          />
+      </div>
       <div className='blurb'>
         Solve Crimes, Outsmart Criminals
       </div>

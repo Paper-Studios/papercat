@@ -225,12 +225,25 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   /* avoid using pixels unless absolutely necessary - messes with responsiveness */
-  padding: 5%;
+  padding: 3%;
   margin-bottom: 30px;
 }
 
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 #headerimg {
-  align-self: center;
+  filter: brightness(80%);
+}
+
+.banner-video {
+  position: absolute;
+  width: 70%;
+  height: 90%;
 }
 
 .blurb {
