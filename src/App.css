@@ -313,6 +313,64 @@ h3 {
   padding: 2%;
 }
 
+/* ---------------------------------------------------------- */
+/* PRESSKIT PAGE */
+/* ---------------------------------------------------------- */
+.presskit-content {
+  align-items: start;
+  background: linear-gradient(to top, #884CF5, #4E229C);
+  display: flex;
+  flex-direction: row;
+  padding: 5% 5% 0% 5%;
+}
+.presskit-sidebar {
+  min-width: 25%;
+}
+.presksit-mainbar {
+
+}
+.mainbar-entry {
+  align-items: center;
+  background: #4E229C;
+  border-radius: 4%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  padding: 1% 4%;
+}
+.presskit-features {
+  display: flex;
+  flex-direction: column;
+}
+.game-images {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.screenshot {
+  margin-bottom: 2%;
+  width: 40%;
+}
+.screenshot:hover {
+  cursor: pointer;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* ---------------------------------------------------------- */
 /* RESPONSIVENESS */
