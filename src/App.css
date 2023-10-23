@@ -176,6 +176,7 @@ h3 {
 }
 
 .card-one {
+  transition: ease-in-out 0.4s;
   transform: rotate(15deg) translate(30%, -8%);
 }
 
@@ -184,6 +185,7 @@ h3 {
 }
 
 .card-two {
+  transition: ease-in-out 0.4s;
   transform: rotate(-12deg) translate(185%, 25%);
 }
 
@@ -192,6 +194,7 @@ h3 {
 }
 
 .card-three {
+  transition: ease-in-out 0.4s;
   transform: rotate(-20deg) translate(420%, 215%);
   height: 75px;
 }
@@ -685,19 +688,12 @@ h3 {
   .home-screenshots img {
     width: 48%;
   }
-  h1 {
-    font-size: x-large;
-  }
-  .member {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .member-card, .member-skewed-card {
+    height: 125px;
   }
   .member-photo {
-    width: 50%;
-  }
-  .member-blurb {
-    text-align: left;
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -740,6 +736,27 @@ h3 {
   .steam-info p {
     font-size: 18px;
   }
+  .team-content h1 {
+    font-size: 1.5rem;
+  }
+  .team-content p {
+    font-size: 1rem;
+  }
+  .member {
+    flex-direction: column;
+    position: relative;
+  }
+  .member-image {
+    width: 50%;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  .member-skewed-card {
+    position: absolute;
+  }
+  .member-image-holder {
+    position: relative;
+  }
 }
 
 /* MEDIUM MOBILE TERRITORY*/
@@ -772,6 +789,13 @@ h3 {
   .steam-info p {
     font-size: 16px;
   }
+  .member {
+    padding: 4%;
+    margin-top: 30px;
+  }
+  .member-content {
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -798,6 +822,9 @@ h3 {
   }
   .card-three:hover {
     transform: rotate(-15deg) translate(385%, 50%);
+  }
+  .member-image {
+    width: 60%;
   }
 }
 
@@ -834,6 +861,19 @@ h3 {
   }
   .Home {
     margin-top: 3%;
+  }
+  .team-content {
+    margin-top: 5%;
+  }
+  .team-content h1, p {
+    margin: 5% 0;
+  }
+  .member-content h4 {
+    margin-bottom: 5%;
+  }
+  .member-image {
+    width: 70%;
+    margin-bottom: 20px;
   }
 }
 
@@ -902,19 +942,21 @@ h3 {
     width: 100%;
     margin-bottom: 15px;
   }
-  h1 {
-    font-size: large;
-  }
-  .member {
-    display: flex;
-    flex-direction: column;
+  .team-content h1 {
     text-align: center;
   }
-  .member-photo {
-    width: 50%;
+  .member {
+    padding: 6%;
   }
-  .member-blurb {
-    text-align: left;
+  .member-image {
+    width: 90%;
+  }
+  .member-card, .member-skewed-card {
+    height: 100px;
+  }
+  .member-photo {
+    height: 125px;
+    width: 125px;
   }
 }
 
