@@ -176,6 +176,7 @@ h3 {
 }
 
 .card-one {
+  transition: ease-in-out 0.4s;
   transform: rotate(15deg) translate(30%, -8%);
 }
 
@@ -184,6 +185,7 @@ h3 {
 }
 
 .card-two {
+  transition: ease-in-out 0.4s;
   transform: rotate(-12deg) translate(185%, 25%);
 }
 
@@ -192,6 +194,7 @@ h3 {
 }
 
 .card-three {
+  transition: ease-in-out 0.4s;
   transform: rotate(-20deg) translate(420%, 215%);
   height: 75px;
 }
@@ -421,15 +424,77 @@ h3 {
   padding: 5%;
 }
 
+.team-content p {
+  font-family: var(--text-tertiary);
+  font-size: 20px;
+}
+
+.team-content h1, p {
+  margin: 2% 0;
+}
+
 .member {
   display: flex;
   align-items: center;
-  background: #4E229C;
-  border-radius: 4%;
-  margin-bottom: 5%;
+  background: #402278;
+  border-radius: 2rem;
+  margin-top: 50px;
   padding: 2%;
+  justify-content: space-between;
 }
 
+.member-image {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 31%;
+  align-items: center;
+  position: relative;
+  align-self: center;
+}
+
+.member-card {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(#884CF5, #4E229C);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  position: absolute;
+  z-index: 1;
+}
+
+.member-skewed-card {
+  width: 100%;
+  height: 150px;
+  background: var(--color-secondary);
+  transform: rotate(-10deg);
+}
+
+.member-image-holder {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  bottom: 5px;
+  border: 4px solid var(--color-secondary);
+  border-radius: 50%;
+}
+
+.member-photo {
+  height: 175px;
+  width: 175px;
+}
+
+.member-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+}
+
+.member-content h4 {
+  margin: 0;
+}
+
+.member-content p {
+  font-family: var(--text-tertiary);
+}
 /* ---------------------------------------------------------- */
 /* GAMES PAGE */
 /* ---------------------------------------------------------- */
@@ -623,19 +688,12 @@ h3 {
   .home-screenshots img {
     width: 48%;
   }
-  h1 {
-    font-size: x-large;
-  }
-  .member {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .member-card, .member-skewed-card {
+    height: 125px;
   }
   .member-photo {
-    width: 50%;
-  }
-  .member-blurb {
-    text-align: left;
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -678,6 +736,27 @@ h3 {
   .steam-info p {
     font-size: 18px;
   }
+  .team-content h1 {
+    font-size: 1.5rem;
+  }
+  .team-content p {
+    font-size: 1rem;
+  }
+  .member {
+    flex-direction: column;
+    position: relative;
+  }
+  .member-image {
+    width: 50%;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  .member-skewed-card {
+    position: absolute;
+  }
+  .member-image-holder {
+    position: relative;
+  }
 }
 
 /* MEDIUM MOBILE TERRITORY*/
@@ -710,6 +789,13 @@ h3 {
   .steam-info p {
     font-size: 16px;
   }
+  .member {
+    padding: 4%;
+    margin-top: 30px;
+  }
+  .member-content {
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -736,6 +822,9 @@ h3 {
   }
   .card-three:hover {
     transform: rotate(-15deg) translate(385%, 50%);
+  }
+  .member-image {
+    width: 60%;
   }
 }
 
@@ -772,6 +861,19 @@ h3 {
   }
   .Home {
     margin-top: 3%;
+  }
+  .team-content {
+    margin-top: 5%;
+  }
+  .team-content h1, p {
+    margin: 5% 0;
+  }
+  .member-content h4 {
+    margin-bottom: 5%;
+  }
+  .member-image {
+    width: 70%;
+    margin-bottom: 20px;
   }
 }
 
@@ -840,19 +942,21 @@ h3 {
     width: 100%;
     margin-bottom: 15px;
   }
-  h1 {
-    font-size: large;
-  }
-  .member {
-    display: flex;
-    flex-direction: column;
+  .team-content h1 {
     text-align: center;
   }
-  .member-photo {
-    width: 50%;
+  .member {
+    padding: 6%;
   }
-  .member-blurb {
-    text-align: left;
+  .member-image {
+    width: 90%;
+  }
+  .member-card, .member-skewed-card {
+    height: 100px;
+  }
+  .member-photo {
+    height: 125px;
+    width: 125px;
   }
 }
 
