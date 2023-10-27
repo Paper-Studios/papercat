@@ -4,8 +4,10 @@ import ss2 from '../../assets/ss2.jpg';
 import ss3 from '../../assets/ss3.jpg';
 import ss4 from '../../assets/ss4.png';
 import ss5 from '../../assets/ss5.png';
+import Image from './Image.js';
 
 function PressKit() {
+
   return (
     <div className="presskit-content">
       <div className="presskit-sidebar">
@@ -61,12 +63,12 @@ function PressKit() {
         <div className="mainbar-entry">
           <h1>Images</h1>
           <div className="game-images">
-            <img src={main} className="screenshot" alt="Title Screen" />
-            <img src={ss1} className="screenshot" alt="Gameplay" />
-            <img src={ss2} className="screenshot" alt="Gameplay" />
-            <img src={ss3} className="screenshot" alt="Gameplay" />
-            <img src={ss4} className="screenshot" alt="Gameplay" />
-            <img src={ss5} className="screenshot" alt="Gameplay" />
+            <Image imageUrl={main} fileName={"PaperPerjuryTitleScreen"} />
+            <Image imageUrl={ss1} fileName={"PaperPerjuryGameplay1"} />
+            <Image imageUrl={ss2} fileName={"PaperPerjuryGameplay2"} />
+            <Image imageUrl={ss3} fileName={"PaperPerjuryGameplay3"} />
+            <Image imageUrl={ss4} fileName={"PaperPerjuryGameplay4"} />
+            <Image imageUrl={ss5} fileName={"PaperPerjuryGameplay5"} />
           </div>
         </div>
       </div>
