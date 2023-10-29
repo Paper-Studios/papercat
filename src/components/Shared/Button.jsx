@@ -23,15 +23,15 @@ export default function Button ({ text, icon, href, className, targetIsBlank, fo
       alignItems: 'center',
       justifyContent: 'center',
       margin: '5% 0',
-      fontSize: '1.25rem',
-      fontFamily: 'Source Sans Pro, sans-serif',
+      fontSize: '1.5rem',
+      fontFamily: 'Bubblegum Sans, sans-serif',
       cursor: 'pointer',
       filter: 'drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5))',
     },
     btnIcon: {
       color: '#F5647F',
       marginRight: '0.75rem',
-      fontSize: '1.25rem'
+      fontSize: '1.5rem'
     }
   }
 
