@@ -1,3 +1,4 @@
+import Button from '../Shared/Button'
 const Footer = () => {
   return (
     <div className='footer'>
@@ -17,8 +18,7 @@ const Footer = () => {
       </div>
       <div className='footer-section'>
         <p>Download our latest</p>
-        <p>Press Kit</p>
-        <a href='/presskit'>Image</a>
+        <Button icon={'download'} text={'Press Kit'} href={'/presskit'} type={'button'}/>
       </div>
     </div>
   )
