@@ -508,7 +508,7 @@ h3 {
 .game {
   align-items: center;
   background: #4E229C;
-  border-radius: 4%;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
@@ -523,26 +523,34 @@ h3 {
   background: linear-gradient(to top, #884CF5, #4E229C);
   display: flex;
   flex-direction: row;
-  padding: 5% 5% 0% 5%;
+  padding: 4%;
 }
 .presskit-sidebar {
-  min-width: 25%;
+  /* min-width: 25%; */
+  flex-basis: 25%;
 }
-.presksit-mainbar {
-
+.sidebar-container {
+  margin-bottom: 1.5rem;
+}
+.press-paragraph {
+  font-family: var(--text-tertiary);
+}
+.presskit-mainbar {
+  flex-basis: 75%;
 }
 .mainbar-entry {
-  align-items: center;
-  background: #4E229C;
-  border-radius: 4%;
+  /* align-items: center; */
+  background: #402278;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5%;
-  padding: 1% 4%;
+  margin-top: 5%;
+  padding: 4%;
 }
 .presskit-features {
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 .game-images {
   align-items: center;
@@ -978,6 +986,9 @@ h3 {
   .member-photo {
     height: 125px;
     width: 125px;
+  }
+  .presskit-content {
+    flex-direction: column;
   }
   .footer {
     display: flex;

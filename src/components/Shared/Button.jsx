@@ -44,7 +44,7 @@ export default function Button ({ text, icon, href, className, targetIsBlank, fo
       iconSymbol = <FontAwesomeIcon icon={faCircleDown} style={styles.btnIcon}/>;
       break;
     case 'steam':
-      iconSymbol = '';
+      iconSymbol = <img src='/assets/steamLogo.png' alt='Steam Logo' style={{height: '1rem', width: '1rem'}}/>;
       break;
     default:
       iconSymbol = '';
