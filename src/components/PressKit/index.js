@@ -11,18 +11,18 @@ function PressKit() {
   return (
     <div className="presskit-content">
       <div className="presskit-sidebar">
-        <div>
+        <div className="sidebar-container">
           <h3>Developer</h3>
           <p>Paper Cat Games</p>
           <p>Based in California, U.S.</p>
         </div>
 
-        <div>
+        <div className="sidebar-container">
           <h3>Release Date</h3>
           <p>Q1 2024</p>
         </div>
 
-        <div>
+        <div className="sidebar-container">
           <h3>Platforms</h3>
           <p>Steam</p>
         </div>
@@ -40,17 +40,17 @@ function PressKit() {
 
         <div className="mainbar-entry">
           <h1>Description</h1>
-          <p>Paper Perjury is a detective mystery game where you solve a series of cases as newly hired police clerk Justina Smith and find out the truth behind a string of suspicious crimes. Work with the energetic detective Ernest Hunt and dig for clues in the paper trail to discover the secrets that paperwork can hide.</p>
+          <p className="press-paragraph">Paper Perjury is a detective mystery game where you solve a series of cases as newly hired police clerk Justina Smith and find out the truth behind a string of suspicious crimes. Work with the energetic detective Ernest Hunt and dig for clues in the paper trail to discover the secrets that paperwork can hide.</p>
         </div>
 
         <div className="mainbar-entry">
           <h1>History</h1>
-          <p>Paper Perjury started because the creator James Acosta wanted to use Ace Attorney mechanics outside of the standard courtroom setting. While originally called Paper Trails, it has been renamed to Paper Perjury to emphasize the core gameplay of catching witnesses in their lies.</p>
+          <p className="press-paragraph">Paper Perjury started because the creator James Acosta wanted to use Ace Attorney mechanics outside of the standard courtroom setting. While originally called Paper Trails, it has been renamed to Paper Perjury to emphasize the core gameplay of catching witnesses in their lies.</p>
         </div>
 
         <div className="mainbar-entry">
           <h1>Features</h1>
-          <ul className="presskit-features">
+          <ul className="presskit-features press-paragraph">
             <li>Collect evidence from colorful characters, each animated in handcrafted pixel art</li>
             <li>Interview witnesses from all walks of life.</li>
             <li>Use evidence to outwit criminals to catch them in their lies - and shove the truth in their face!</li>

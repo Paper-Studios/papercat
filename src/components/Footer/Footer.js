@@ -1,3 +1,4 @@
+import Button from '../Shared/Button'
 const Footer = () => {
   return (
     <div className='footer'>
@@ -17,8 +18,8 @@ const Footer = () => {
       </div>
       <div className='footer-section'>
         <p>Download our latest</p>
-        <p>Press Kit</p>
-        <a href='/presskit'>Image</a>
+        {/* Eventually make this href to a zip file in local project */}
+        <Button icon={'download'} text={'Press Kit'} href={'/presskit'} type={'button'}/>
       </div>
     </div>
   )
