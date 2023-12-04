@@ -14,18 +14,20 @@ function Games() {
       <div className="games-display-left">
         <h3 style={{margin: '5% 0'}}>We make games!</h3>
         {gameInfo.title &&
-          <>
-            <div>{gameInfo.title}</div>
-            <p>{gameInfo.summary}</p>
+          <div className="game-info-display">
+            <div style={{marginBottom: '6%'}}>{gameInfo.title}</div>
+            <p style={{marginBottom: '6%', fontFamily: '"Source Sans 3", sans-serif'}}>{gameInfo.summary}</p>
             <iframe
               src={gameInfo.embededurl}
               title="Paper Perjury Trailer"
               frameBorder="0"
               allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              className=""
+              className="game-display-video"
             />
-            <Button icon={'steam'} text={'Buy on Steam'} href={gameInfo.steamLink} type={'link'}/>
-          </>
+            <div className="games-button-container">
+              <Button icon={'steam'} text={'Buy on Steam'} href={gameInfo.steamLink} type={'link'}/>
+            </div>
+          </div>
         }
       </div>
       <div className="games-select-right" onClick={resetGameInfo}>
