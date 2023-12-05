@@ -451,6 +451,17 @@ h3 {
   margin-top: 50px;
   padding: 2%;
   justify-content: space-between;
+  -webkit-animation: mover 1s;
+  animation: mover 1s;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(15px); opacity: 0%; }
+  100% { transform: translateY(0); opacity: 100%; }
+}
+@keyframes mover {
+  0% { transform: translateY(15px); opacity: 0%; }
+  100% { transform: translateY(0); opacity: 100%; }
 }
 
 .member-image {
@@ -558,6 +569,8 @@ h3 {
   overflow: hidden;
   box-shadow: 8px 8px 0px var(--color-secondary);
   margin-bottom: 7%;
+  -webkit-animation: mover 1s;
+  animation: mover 1s;
 }
 
 .game-prieview {
@@ -707,7 +720,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   z-index: 0;
-  margin: 3%;
+  margin: 3% 15%;
   justify-content: center;
 }
 
@@ -720,7 +733,7 @@ h3 {
   align-items: center;
   padding: 1%;
   border: 3px solid #402278;
-  margin: 2%;
+  margin: 3%;
   position: relative;
 }
 .blog-entry:before {
@@ -732,6 +745,7 @@ h3 {
   z-index: -1;
   transform: translate(18px, -8px);
 }
+
 .blog-img {
   width: 100%;
 }
@@ -821,6 +835,9 @@ h3 {
 @media screen and (max-width: 1320px) {
   .navigation-links ul, h3 {
     font-size: 26px;
+  }
+  .blog-entry-row {
+    margin: 3%;
   }
 }
 @media screen and (max-width: 1200px) {
