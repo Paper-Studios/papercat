@@ -19,7 +19,7 @@ const Footer = () => {
       <div className='footer-section'>
         <p>Download our latest</p>
         {/* Eventually make this href to a zip file in local project */}
-        <Button icon={'download'} text={'Press Kit'} href={'/presskit'} type={'button'}/>
+        <Button icon={'download'} text={'Press Kit'} href={'/presskit'} type={'button'} className='download-button'/>
       </div>
     </div>
   )

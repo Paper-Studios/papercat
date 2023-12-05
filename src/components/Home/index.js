@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWindows, faApple } from '@fortawesome/free-brands-svg-icons';
+import 'animate.css';
 
 function Home() {
   return (
@@ -17,6 +18,10 @@ function Home() {
       </div>
       <div className='blurb'>
         <span>Solve Crimes, Outsmart Criminals</span>
+      </div>
+      <div className='case-selection'>
+        <img src={'/assets/case_selection.gif'} width='49%' height='49%' alt='Case Selection Gif'/>
+        <img src={'/assets/screenshot4.jpg'} width='49%' height='49%' alt='gameplay'/>
       </div>
       <div className='home-content'>
         <div className='home-description'>
@@ -51,8 +56,8 @@ function Home() {
           </div>
         </div>
         <div className='home-screenshots'>
-          <img src='/assets/screenshot1.jpg' alt='gameplay'/>
-          <img src='/assets/screenshot2.jpg' alt='gameplay'/>
+          <img src='/assets/screenshot1.jpg' alt='gameplay' width='49%' height='49%'/>
+          <img src='/assets/screenshot2.jpg' alt='gameplay' width='49%' height='49%'/>
         </div>
       </div>
     </div>
