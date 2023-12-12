@@ -614,102 +614,80 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: 65%;
   background: linear-gradient(to top, #884CF5, #4E229C);
   padding: 5%;
 }
 
-.contactGreeter {
-  background-color: var(--color-secondary);
-  align-self: center;
-  margin: 100px;
-  padding: 20px;
-  font-size: x-large;
-}
 
-
-.contactMain {
+.contactMain { /*holds contactBackdrop(Image side) & contactBoxes*/
   display: flex;
   justify-content: space-between;
 }
 
-.contactBoxes {
+.contactBoxes { /*holds contactInputs and Send Button*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: center;
   flex-basis: 48%;
 }
 
-.contactBackdrop {
+.contactInputs {  /*holds text labels and input boxes*/
+  
+}
+
+.contactBackdrop { /*holds image*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background: #4E229C;
   border-radius: 4%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   padding: 2%;
   flex-basis: 48%;
 }
 
-.contactImage {
+.contactImage { /*Image*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 250%;
 }
 
-/*
-.contactMain {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-
-.contactBoxes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-}
-
-.contactBackdrop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  justify-content: space-evenly;
-  background: #4E229C;
-  border-radius: 4%;
-  margin-bottom: 5%;
-  padding: 2%;
-  width: 100%;
-}
-*/
 .textBackdrop{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  /*box-sizing: border-box;*/
   background: #402278;
+  border-style: none;
   border-radius: 4%;
   margin-bottom: 5%;
   padding: 2%;
   flex-basis: 48%;
+  color: white;
 }
 
 label{
   font-family: var(--text-primary);
 }
 
+#name{
+  width: 400px;
+}
+
 #email {
-  
+  width: 400px;
 }
 
 #mail {
-
+  
+  width: 400px;
+  height: 85px;
+  
 }
 /* ---------------------------------------------------------- */
 /* CONTACT PAGE */
