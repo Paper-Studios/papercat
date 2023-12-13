@@ -4,11 +4,12 @@ import BlogEntry from './BlogEntry';
 function Blog() {
   return (
     <div className="blog-content">
-      {
-        exampleData.map(({title, content}) => (
-          <BlogEntry title={ title } content={ content } />
-        ))
-      }
+      <h2 className="blog-header">Our Latest Updates</h2>
+      <div className="blog-entry-row">
+        {exampleData.map(({title, date, content}) => (
+            <BlogEntry title={ title } content={ content } date={ date }/>
+          ))}
+      </div>
     </div>
   )
 }
