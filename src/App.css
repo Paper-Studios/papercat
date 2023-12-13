@@ -780,6 +780,95 @@ h3 {
   padding: 3% 6% !important;
 }
 
+
+
+/* ---------------------------------------------------------- */
+/* CONTACT PAGE */
+/* ---------------------------------------------------------- */
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  background: linear-gradient(to top, #884CF5, #4E229C);
+  padding: 5%;
+}
+
+
+.contactMain { /*holds contactBackdrop(Image side) & contactBoxes*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactBoxes { /*holds contactInputs and Send Button*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 48%;
+}
+
+.contactInputs {  /*holds text labels and input boxes*/
+  
+}
+
+.contactBackdrop { /*holds image*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #4E229C;
+  border-radius: 4%;
+  margin-bottom: 2%;
+  padding: 2%;
+  flex-basis: 48%;
+}
+
+.contactImage { /*Image*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250%;
+}
+
+.textBackdrop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /*box-sizing: border-box;*/
+  background: #402278;
+  border-style: none;
+  border-radius: 4%;
+  margin-bottom: 5%;
+  padding: 2%;
+  flex-basis: 48%;
+  color: white;
+}
+
+label{
+  font-family: var(--text-primary);
+}
+
+#name{
+  width: 400px;
+}
+
+#email {
+  width: 400px;
+}
+
+#mail {
+  
+  width: 400px;
+  height: 85px;
+  
+}
+/* ---------------------------------------------------------- */
+/* CONTACT PAGE */
+/* ---------------------------------------------------------- */
+
+
 /* ---------------------------------------------------------- */
 /* Footer */
 /* ---------------------------------------------------------- */
